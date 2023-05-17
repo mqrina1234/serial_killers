@@ -1,0 +1,200 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins',sans-serif;
+}
+
+html, body {
+    height: auto;
+}
+
+body {
+    background-size: cover;
+    background-position: top center;
+	background-repeat: no-repeat;
+	background-image: url('lust_murders.jpg');
+    width: 100%;
+    background-color: black;
+  height: 100%;
+}
+
+header {
+	width: 100%;
+	padding: 0.6em 0;
+}
+
+header .menu {
+	max-width: 75em;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;	
+}
+
+.menu .logo img {
+	width: 9.5em;
+}
+
+.menu ul{
+	display: flex;
+	flex-direction: row;
+
+}
+.menu ul li {
+	list-style: none;
+
+}
+
+.menu ul li a {
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	padding: 8px 15px;
+	border-radius: 50px;
+	transition: all 0.3s ease;
+}
+
+.menu ul li a:hover {
+	background-image: linear-gradient(to right, #5f00006c  , #7e03036c);
+	color: rgb(255, 49, 49);
+}
+
+.naslov{
+    margin: 0% 20%;
+    color: red;
+    font-size: 2.5em;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.podnaslov{
+    margin: 2% 11%;
+    color:azure;
+    font-size: 1em;
+    display: flex;
+    justify-content: flex-end;
+}
+
+table.included {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0.125em solid #FFFFFF;
+    width: 30em;
+    text-align: center;
+    border-collapse: collapse;
+  }
+  table.included td, table.included th {
+
+    padding: 0.3em 0.3em;
+  }
+  table.included tbody td {
+    font-size: 0.8em;
+    color: #FFFFFF;
+  }
+
+  table.included thead {
+      border-bottom: 0.25em solid #333333;
+  }
+  table.included thead th {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+  }
+  table.included tfoot td {
+    font-size: 0.85em;
+  }
+.tablica{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0% 15%;
+}
+
+.fritz img, .gacy img , .jeffrey img{
+    height: 10em;
+    width: 7em;
+
+}
+
+.poredak{
+    margin-left:51%;
+    height: 15em;
+    width: 35em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.fritz p, .gacy p , .jeffrey p{
+    margin-top: 5%;
+    color: azure;
+    display: flex;
+    justify-content:center;
+
+}
+.sve_analiza{
+    margin: 10% 10% 0% 10%;
+
+}
+table.analiza {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid #FFFFFF;
+    width:60em;
+    text-align: center;
+    border-collapse: collapse;
+  }
+  table.analiza td, table.analiza th {
+    border: 1px solid #FFFFFF;
+    padding: 3px 4px;
+  }
+  table.analiza tbody td {
+    font-size: 13px;
+    color: white;
+  }
+
+  table.analiza thead {
+      border-bottom: 4px solid #333333;
+  }
+  table.analiza thead th {
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    border-left: 2px solid #333333;
+  }
+  table.analiza thead th:first-child {
+    border-left: none;
+  }
+  
+  table.analiza tfoot td {
+    font-size: 14px;
+  }
+
+
+  @media (max-width: 1280px) and (max-height: 1024px) {
+	body{
+	background-image: url("lust_murders2.jpg");
+	width: auto;
+	height: auto;
+	}
+
+    .sve{
+        margin-top: 7%;
+    }
+
+    .poredak{
+        margin-left: 45%;
+    }
+  }
+
+  @media (min-width: 1280px) and (min-height: 1024px) {
+    .analiza {
+      visibility: visible;
+    }
+  }
+
+  @media (not (min-width: 1280px)) or (not (min-height: 1024px)) {
+    .analiza {
+      visibility: collapse;
+    }
+}

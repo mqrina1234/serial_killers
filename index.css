@@ -1,0 +1,161 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins',sans-serif;
+}
+
+html, body {
+    height: auto;
+}
+
+body {
+    background-size: cover;
+    background-position: top center;
+	background-repeat: no-repeat;
+	background-color: black;
+	background-image: url('index.jpg');
+    width: 100%;
+  height: 100%;
+}
+
+header {
+	width: 100%;
+	padding: 0.6em 0;
+}
+
+header .menu {
+	max-width: 75em;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;	
+}
+
+.menu .logo img {
+	width: 9.5em;
+}
+
+.menu ul{
+	display: flex;
+	flex-direction: row;
+
+}
+.menu ul li {
+	list-style: none;
+
+}
+
+.menu ul li a {
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	padding: 8px 15px;
+	border-radius: 50px;
+	transition: all 0.3s ease;
+}
+
+.menu ul li a:hover {
+	background-image: linear-gradient(to right, #5f00006c  , #7e03036c);
+	color: rgb(255, 49, 49);
+}
+
+.text{
+	margin-top: 10%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+  }
+.text1{
+	font-size: 1.5em;
+	color:#dddddd;
+	margin-bottom: 1.2em;
+	font-family: 'Reem Kufi Ink', sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+  }
+  
+  
+  .text2{
+	display:flex ;
+	justify-content: center;
+	font-size: 16em;
+	color:red;
+	font-family: 'Reem Kufi Ink', sans-serif;
+	mix-blend-mode:screen;
+  }
+
+  .text3{
+	margin-top: 0%;
+	font-size: 1.5em;
+	color:#dddddd;
+	margin-bottom: 1.2em;
+	font-family: 'Reem Kufi Ink', sans-serif;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+  }
+  span{
+	color: #dddddd;
+  }
+
+  
+@media all and (min-width: 1280px) and (min-height: 1024px) {
+	body{
+	background-image: url("index2.jpg");
+	width: auto;
+	height: auto;
+	}
+	.text{
+		margin-top: 30%;
+	}
+
+	.text2{
+		mix-blend-mode:difference;
+	}
+
+
+  }
+
+
+@media all and (max-width: 360px) and (max-height: 760px) {
+	body{
+		background-color: black;
+	background-image: url("index3.jpg");
+	width: auto;
+	height: auto;
+
+	}
+	.text{
+		margin-top: 60%;
+		display: flex;
+		flex-direction: column;
+		justify-content:center ;
+	}
+	.text1{
+		margin: 5% 10%;
+		font-size: 3em;
+		color:#dddddd;
+		margin-bottom: 1.2em;
+		font-family: 'Reem Kufi Ink', sans-serif;
+
+	}
+
+	.text2{
+		color:red;
+		mix-blend-mode: normal;
+		font-size: 13em;
+	}
+	.text3{
+		margin: 5% 0% 5% 55%;
+		font-size: 3em;
+		color:#dddddd;
+		margin-bottom: 1.2em;
+		font-family: 'Reem Kufi Ink', sans-serif;
+
+	}
+
+
+  }
+  
+
